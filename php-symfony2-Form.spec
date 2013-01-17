@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 Form Component
 Name:		php-symfony2-Form
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	8af4f2e523ff1724a41fdbdb3d14a960
+# Source0-md5:	5e8d5383cc4b290580d839245664f46c
 URL:		http://pear.symfony.com/package/Form/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
