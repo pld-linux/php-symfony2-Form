@@ -3,25 +3,35 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Form Component
 Name:		php-symfony2-Form
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	1e60577089acf33e5d91d9852b77635b
-URL:		http://pear.symfony.com/package/Form/
+# Source0-md5:	e21b7692db41e27e76d0a88af677c288
+URL:		http://symfony.com/doc/2.4/components/form/index.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(ctype)
+Requires:	php(date)
+Requires:	php(hash)
+Requires:	php(json)
+Requires:	php(mbstring)
+Requires:	php(pcre)
+Requires:	php(session)
+Requires:	php(spl)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-EventDispatcher >= 2.1
 Requires:	php-symfony2-Intl >= 2.3
 Requires:	php-symfony2-OptionsResolver >= 2.1
 Requires:	php-symfony2-PropertyAccess >= 2.3
-Suggests:	php-symfony2-HttpFoundation
+Suggests:	php-symfony2-FrameworkBundle
+Suggests:	php-symfony2-Security
+Suggests:	php-symfony2-TwigBridge
 Suggests:	php-symfony2-Validator
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -103,5 +113,5 @@ rm -rf $RPM_BUILD_ROOT
 %lang(sr@cyrillic) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf
 %lang(sr@latin) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf
 %lang(sv) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.sv.xlf
-%lang(uk) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.ua.xlf
+%lang(uk) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.uk.xlf
 %lang(zh_CN) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf
