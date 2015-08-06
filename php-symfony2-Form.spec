@@ -60,6 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG.md LICENSE README.md
 %dir %{php_pear_dir}/Symfony/Component/Form
 %{php_pear_dir}/Symfony/Component/Form/*.php
+%{php_pear_dir}/Symfony/Component/Form/ChoiceList
+%{php_pear_dir}/Symfony/Component/Form/Deprecated
 %{php_pear_dir}/Symfony/Component/Form/Exception
 %{php_pear_dir}/Symfony/Component/Form/Extension
 %{php_pear_dir}/Symfony/Component/Form/Guess
@@ -70,6 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %dir %{php_pear_dir}/Symfony/Component/Form/Resources/translations
 %lang(ar) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.ar.xlf
+%lang(az) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.az.xlf
 %lang(bg) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.bg.xlf
 %lang(ca) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.ca.xlf
 %lang(cs) %{php_pear_dir}/Symfony/Component/Form/Resources/translations/validators.cs.xlf
