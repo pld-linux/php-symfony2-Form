@@ -11,7 +11,6 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	ecfb5388dd530c622328cb94acc8388c
 URL:		http://symfony.com/doc/2.7/components/form/index.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(ctype)
@@ -22,7 +21,6 @@ Requires:	php(mbstring)
 Requires:	php(pcre)
 Requires:	php(session)
 Requires:	php(spl)
-Requires:	php-pear >= 4:1.3.10
 Requires:	php-symfony2-EventDispatcher >= 2.1
 Requires:	php-symfony2-Intl >= 2.4
 Requires:	php-symfony2-OptionsResolver >= 2.6
