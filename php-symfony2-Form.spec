@@ -21,6 +21,7 @@ Requires:	php(mbstring)
 Requires:	php(pcre)
 Requires:	php(session)
 Requires:	php(spl)
+Requires:	php-dirs >= 1.6
 Requires:	php-symfony2-EventDispatcher >= 2.1
 Requires:	php-symfony2-Intl >= 2.4
 Requires:	php-symfony2-OptionsResolver >= 2.6
