@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Form Component
 Name:		php-symfony2-Form
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	ecfb5388dd530c622328cb94acc8388c
+# Source0-md5:	8e01352cf167245276af02ca62f5d5bf
 URL:		http://symfony.com/doc/2.7/components/form/index.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
