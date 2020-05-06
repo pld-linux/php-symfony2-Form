@@ -2,13 +2,13 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Form Component
 Name:		php-symfony2-Form
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	8e01352cf167245276af02ca62f5d5bf
-URL:		http://symfony.com/doc/2.7/components/form/index.html
+# Source0-md5:	0164e71a87d7efcbdc7182c6c28f2f99
+URL:		https://symfony.com/doc/2.8/components/form.htmlindex.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
@@ -98,6 +98,8 @@ rm -rf $RPM_BUILD_ROOT
 %lang(mn) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.mn.xlf
 %lang(nb) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.nb.xlf
 %lang(nl) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.nl.xlf
+%lang(nn) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.nn.xlf
+%lang(no) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.no.xlf
 %lang(pl) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.pl.xlf
 %lang(pt) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.pt.xlf
 %lang(pt_BR) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf
@@ -108,5 +110,6 @@ rm -rf $RPM_BUILD_ROOT
 %lang(sr@cyrillic) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf
 %lang(sr@latin) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf
 %lang(sv) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.sv.xlf
+%lang(tl) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.tl.xlf
 %lang(uk) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.uk.xlf
 %lang(zh_CN) %{php_data_dir}/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf
